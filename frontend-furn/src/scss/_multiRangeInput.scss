@@ -1,0 +1,107 @@
+.Pcontainer {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Pslider {
+    position: relative;
+    width: 200px;
+  }
+  
+  .Pslider__track,
+  .Pslider__range,
+  .Pslider__left-value,
+  .Pslider__right-value {
+    position: absolute;
+  }
+  
+  .Pslider__track,
+  .Pslider__range {
+    border-radius: 3px;
+    height: 5px;
+  }
+  
+  .Pslider__track {
+    background-color: $primary;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .Pslider__range {
+    background-color: $secondary;
+    z-index: 2;
+  }
+  
+  .Pslider__left-value,
+  .Pslider__right-value {
+    color: $secondary;
+    font-size: 14px;
+    margin-top: 18px;
+    font-weight: bold;
+  }
+  
+  .Pslider__left-value {
+    left: 6px;
+  }
+  
+  .Pslider__right-value {
+    right: -4px;
+  }
+  
+  /* Removing the default appearance */
+  .Pthumb,
+  .Pthumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .Pthumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 200px;
+    outline: none;
+  }
+  
+  .Pthumb--zindex-3 {
+    z-index: 3;
+  }
+  
+  .Pthumb--zindex-4 {
+    z-index: 4;
+  }
+  
+  .Pthumb--zindex-5 {
+    z-index: 5;
+  }
+  
+  /* For Chrome browsers */
+  .Pthumb::-webkit-slider-thumb {
+    background-color: #f1f5f7;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 0 0 1px 1px $secondary;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+  }
+  
+  /* For Firefox browsers */
+  .Pthumb::-moz-range-thumb {
+    background-color: #f1f5f7;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px $secondary;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+  }
+  

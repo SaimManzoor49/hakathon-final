@@ -1,0 +1,115 @@
+.bg-img1 {
+    background-image: url('https://images.unsplash.com/photo-1615800002234-05c4d488696c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1000&ixid=MnwxfDB8MXxyYW5kb218MHx8c29mYXx8fHx8fDE2NzQyMzM1Mjg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920');
+    height: 630px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bottom-line {
+    height: 50px;
+}
+
+.position {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    min-width: 195px;
+}
+
+.search-icon{
+    // margin-left: -20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.search-icon:hover{
+cursor: pointer;
+
+}
+
+
+
+.img-zero {
+    // height: 400px;
+}
+
+
+.third-img {
+
+    height: 400px;
+
+}
+
+.borderBottom:focus {
+    border-radius: 0px !important;
+    border-bottom: 3px solid $secondary;
+}
+
+.sofaActive {
+    border-radius: 0px !important;
+    border-bottom: 3px solid $secondary;
+}
+
+.insta:hover {
+    // filter:blur(2px);
+    cursor: pointer;
+
+}
+.third-img:hover {
+
+    // transform: scale(1.05);
+    transform:translateY(-5px);
+    transition: all ease 0.5s;
+}
+
+.insta:hover .insta-d {
+    display: block;
+    // filter: blur(0px);
+}
+
+.insta-d {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 32px;
+    font-weight: bold;
+    display: none;
+}
+
+
+
+.links:hover{
+    color: $secondary;
+}
+.links:focus{
+    border-bottom: 2px solid $secondary;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 595px) {
+   
+    .position{
+        top: 14%;
+        left: 14%;
+    }
+    .f1{
+        font-size: 14px !important;
+    }
+    .f2{
+        font-size: 16px !important;
+        
+    }
+    .f3{
+        font-size: 12px !important;
+        
+    }
+    .f4{
+        font-size: 12px !important;
+
+    }
+   
+  }
